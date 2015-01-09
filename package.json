@@ -1,0 +1,23 @@
+{
+  "name": "angular-popup",
+  "version": "1.0.0",
+  "description": "Service for working with browser pop-up windows",
+  "main": "angular-popup.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appointlet/angular-popup"
+  },
+  "keywords": [
+    "angular",
+    "popup"
+  ],
+  "author": "Jared Morse <jarcoal@gmail.com> (https://github.com/jarcoal)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appointlet/angular-popup/issues"
+  },
+  "homepage": "https://github.com/appointlet/angular-popup"
+}
