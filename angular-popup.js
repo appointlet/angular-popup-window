@@ -20,20 +20,21 @@
        * window is closed.
        *
        * @param  {string} url to point the window to.
+       * @param  {string} name of the window.
        * @param  {string} options to apply to the window (likely height/width).
        */
-      this.open = function(url, options) {
-        $log.debug('PopUp', 'opening', url, options);
+      this.open = function(url, name, options) {
+        $log.debug('PopUp', 'opening', url, name, options);
 
         var d = $q.defer();
 
-        // build the options string
-        var optionsString = _.map(options, function(val, key) {
-          return key + '=' + val;
-        }).join(',');
+        var optionsPieces = [];
+        angular.forEach(options, function(val, key) {
+          optionsPieces.push(key + '=' + val);
+        });
 
         // open the window
-        var win = $window.open(url, url, optionsString);
+        var win = $window.open(url, name, optionsPieces.join(','));
 
         // setup an interval to watch the window for manual dismiss.
         var watcher = $interval(function() {
