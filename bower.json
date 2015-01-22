@@ -1,15 +1,16 @@
 {
-  "name": "angular-popup",
+  "name": "angular-popup-window",
   "version": "1.0.1",
-  "homepage": "https://github.com/appointlet/angular-popup",
+  "homepage": "https://github.com/appointlet/angular-popup-window",
   "authors": [
     "Jared Morse <jarcoal@gmail.com>"
   ],
   "description": "Service for working with browser pop-up windows",
-  "main": "angular-popup.js",
+  "main": "angular-popup-windows.js",
   "keywords": [
     "angular",
-    "popup"
+    "popup",
+    "window"
   ],
   "license": "MIT",
   "ignore": [
