@@ -6,7 +6,7 @@
     "Jared Morse <jarcoal@gmail.com>"
   ],
   "description": "Service for working with browser pop-up windows",
-  "main": "angular-popup-windows.js",
+  "main": "angular-popup-window.js",
   "keywords": [
     "angular",
     "popup",
