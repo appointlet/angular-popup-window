@@ -38,7 +38,7 @@
 
         // setup an interval to watch the window for manual dismiss.
         var watcher = $interval(function() {
-          if (win.closed) {
+          if (win.closed || !win.window) {
             $log.debug('PopUp', 'closed');
             d.resolve();
             $interval.cancel(watcher);
